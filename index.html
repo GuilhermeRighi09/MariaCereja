@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Cereja Roupas e Acessórios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <header class="header">
+        <div class="header-container">
+            <img src="../assets/img/logo.jpg" alt="Maria Cereja Logo" class="brand-logo">
+        </div>
+    </header>
+
+    <section class="introducao">
+        <div class="introducao-conteudo">
+            <h2>A Loja vai até Você!</h2>
+            <p>Moda modesta com conforto e elegância em Piracicaba.</p>
+            <div class="frasedestaque">
+                <i class="textodestaque"></i> Atendimento exclusivo para Piracicaba
+            </div>
+            <div style="margin-top: 20px;">
+                <button class="botaovitrine" onclick="scrollToProducts()">Ver Vitrine Virtual</button>
+            </div>
+        </div>
+    </section>
+
+   
+            <h2 class="apresentacao">Como Funciona?</h2>
+            <div class="apresentacaoconteudo">
+                <div class="texto-conteudo">
+                    <h3 style="text-align: center; display: block;">Experimente no conforto do seu lar ❤️</h3>
+                    <p>Na <strong>Maria Cereja</strong>, queremos que você se sinta segura com sua escolha. Nosso modelo é simples e pensado para clientes de Piracicaba:</p>
+                    
+                    <div style="text-align: left; margin-top: 20px; display: inline-block; font-size: 20px;">
+                        <p><i class="escolha" style="color:var(--primary)"></i> <strong>1. Escolha:</strong> Selecione seus looks favoritos aqui no site.</p>
+                        <p><i class="escolha" style="color:var(--primary)"></i> <strong>2. Solicite:</strong> Nos chame no WhatsApp. Você pode retirar a sacola na loja ou levamos até você.</p>
+                        <p><i class="escolha" style="color:var(--primary)"></i> <strong>3. Prove:</strong> Experimente as peças em casa, com seus sapatos e acessórios, sem pressa.</p>
+                        <p><i class="escolha" style="color:var(--primary)"></i> <strong>4. Decida:</strong> Fique apenas com o que amar! Combinamos a devolução ou retirada das peças restantes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-colecao" id="collection">
+        <h2 class="colecao-titulo">Nossa Coleção</h2>
+        
+        <div class="filtro-container">
+            <button class="filtro" onclick="filterCategory('roupas')">Roupas e Vestidos</button>
+            <button class="filtro" onclick="filterCategory('acessorios')">Acessórios</button>
+        </div>
+
+        <div class="produtos-grid" id="products-grid">
+            </div>
+    </div>
+
+    <div class="produtos-modelos" id="product-modal">
+        <span class="abrir-modelos" onclick="closeProductModal()">&times;</span>
+        <div class="corpo-modelos" id="modal-content">
+            </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-conteudo">
+            <img src="../assets/img/logo.jpg" alt="Maria Cereja" class="footer-logo-img">
+            
+            <p>Leve para casa e prove com amor.</p>
+            
+            <div class="social-icons">
+                <a href="https://instagram.com/maria.cereja_roupaseacessorios" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/Www.mariacereja.com.br/" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://wa.me/5519978384897" target="_blank" title="Falar no WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+            
+            <div class="footer-contact">
+                <p><strong><i class="fas fa-store"></i> Atendimento Piracicaba:</strong></p>
+                <p>Retirada na loja </p>
+                <p>Ou solicite a Malinha </p>
+                <br>
+                <p>
+                    <a href="https://wa.me/5519983848977" style="text-decoration:none; color: inherit;">
+                        <i class="fab fa-whatsapp"></i> (19) 983848977
+                    </a>
+                </p>
+            </div>
+        </div>
+         <div class="direitos">
+    <p>&copy; 2026 Maria Cereja. Todos os direitos reservados.</p>
+    
+    <div class="desenvolvedor-credito">
+        <span>Desenvolvido por</span>
+        <a href="https://sitevendas-ff2j.onrender.com/" target="_blank" title="Desenvolvido por">
+            <img src="../assets/img/LogoGD.png" alt="Guilherme.Dev" class="dev-logo">
+        </a>
+    </div>
+</div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
